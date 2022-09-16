@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+}
+
+.button{
+    background-color: black;
+    color: yellowgreen;
+    border: 2px solid yellowgreen;
+    border-radius: 15%;
+}
+
+#number{
+    color: yellowgreen;
+    text-align: center;
+    font-size: 100px;
+}
