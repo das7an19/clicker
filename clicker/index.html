@@ -1,15 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clicker</title>
-    <link rel="stylesheet" href="clicker.css"></link>
-    <script src ="clicker.js"></script>
+    <title>
+        Clicker game!
+    </title>
+    <link rel="stylesheet" href="clicker.css">
 </head>
 <body>
-    <button onclick= "add()" class="button1" ><h2>Click me !</h2></button>
-    <h1 id="number">0</h1>
+    <h1>Welcome to the clicker game</h1>
+
+    <p>Click the button to get a higher score!</p>
+
+    <p id="scoreText">Score: 0</p>
+
+    <a href="#" class="btn" id="score">Click me</a>
+    <script >
+        let score = 0;
+        document.getElementById("score").addEventListener("click",function (){
+            score = score + 1;
+            document.getElementById("scoreText").innerText = "Score " + score;
+        });
+    </script>
 </body>
 </html>
